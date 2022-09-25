@@ -23,5 +23,13 @@ public class ExceptionDemoTest {
 		Assert.assertEquals("HAPPY",actualResult);
 		
 	}
+	@Test
+	public void givenNullIsPrperShouldReturnHappy() {
+		//Create object MoodAnalyser
+		ExceptionDemo moodAnalyser = new ExceptionDemo(null);
+		String actualResult = moodAnalyser.analyserMood();
+		Assert.assertEquals("HAPPY",actualResult);
+		
+	}
 
 }

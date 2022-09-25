@@ -7,11 +7,15 @@ public class ExceptionDemo {
 	}
     //create method here
 	String analyserMood(){
+		try {
 			if(message.contains("I am in Sad Mood"))
 				return "SAD";
 			if(message.contains("I am in Any Mood"))
 				return "HAPPY";
-			return "Not Valid Message" ;
+		}catch(Exception e ) {
+			return "HAPPY" ;
+		}
+		return "Not Valid Message" ;
 		
 	}
 	
